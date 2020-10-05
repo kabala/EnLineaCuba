@@ -1,6 +1,6 @@
 .home {
-  padding: 0.5em 1em;
   background: linear-gradient(to bottom, white 0%, $bg-yellow 40%);
+  padding: 0.5em 1em;
 
   header,
   section:not(.hero),
@@ -12,10 +12,23 @@
   }
 
   header {
+    display: flex;
+    justify-content: space-between;
     padding: 1em 0;
     img {
       height: 46px;
       width: auto;
+    }
+
+    .btn {
+      color: white;
+      background-color: $secondary;
+      font-size: 18px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $primary;
+      }
     }
   }
 
@@ -64,8 +77,83 @@
         border-radius: 0 0 $medium-border $medium-border;
         min-height: 200px;
         margin-top: -1px;
-        background-color: $secondary;
+        background-color: #04003f;
         z-index: 1;
+      }
+    }
+  }
+
+  .promo {
+    display: flex;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+
+      > div {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-copy {
+      @include breakpoint-up(medium) {
+        padding-right: 2em;
+      }
+
+      h4 {
+        color: $secondary;
+        font-size: 40px;
+      }
+    }
+
+    &-banner {
+      background-color: $tertiary;
+      border-radius: $medium-border;
+      padding: 1em;
+      min-height: 6em;
+    }
+
+    &-slide {
+      color: white;
+      display: flex;
+
+      > div {
+        &:first-child {
+          padding: 1em;
+          font-family: "PT Serif", serif;
+          h4 {
+            font-size: 4.6em;
+            margin: 0;
+          }
+          small {
+            font-size: 1.6rem;
+          }
+        }
+        &:last-child {
+          padding: 1em;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          strong {
+            font-size: 1.4em;
+          }
+
+          p {
+            color: white;
+            font-family: "PT Serif", serif;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0.5em 0;
+          }
+
+          small {
+            color: $secondary;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-top: 1em;
+          }
+        }
       }
     }
   }
@@ -84,6 +172,7 @@
 
   @include breakpoint-up(large) {
     max-width: 1400px;
+    min-height: 500px;
   }
 
   ul {
