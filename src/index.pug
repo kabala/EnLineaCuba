@@ -1,0 +1,96 @@
+doctype html
+
+html(lang="es-ES")
+  head
+    meta(name="viewport", content="width=device-width,user-scalable=no")
+    link(href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="style.scss")
+
+  body.home
+    header
+      img(src="./image/logo.png")
+      nav
+        button.btn Ingresar
+    main
+      section.hero
+        .hero-content
+          .hero-alert
+          .hero-form
+            .hero-slogan
+              h1
+                | Con ___ puedes hacer recargas a Cuba
+                br
+                | de manera rápida y segura!
+            .hero-form-tabs
+              .hero-tabs-head
+                ul
+                  li
+                    button.active(data-tab="phone") Celular
+                  li
+                    button(data-tab="nauta") Nauta
+              .hero-tabs-content
+                form
+                  .hero-form-group
+                    label 1. Ingresa el número del destinatario
+                    div.hero-phone-input
+                      input(placeholder="123 456 789")
+                  .hero-form-group.select
+                    label 2. Elige un paquete
+                    button.hero-dropdown-selected(aria-label="30")
+                      div.selected
+                        span 35
+                        ul
+                          li 30 Minutos
+                          li 30 SMS
+                        strong $40
+                    .hero-dropdown-list
+                      ul
+                        li
+                          div.selected
+                            span 35
+                            ul
+                              li 30 Minutos
+                              li 30 SMS
+                            strong $40
+                        li
+                          div.selected
+                            span 35
+                            ul
+                              li 30 Minutos
+                              li 30 SMS
+                            strong $40
+                    input.hero-select(type="hidden")
+                  .hero-form-group
+                    label 3. Accede!
+                    button(type="submit") Recarga Ahora!
+
+      section.details
+        div.graphic
+          img(src="./image/ill1.png")
+        div.copy
+          h2 Confiable
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id facilisis enim, augue accumsan. At hendrerit congue tincidunt feugiat. Adipiscing sapien, amet vitae tincidunt nec mus elit et. Proin dignissim quis mattis augue ipsum dolor faucibus. Vitae enim varius commodo id feugiat.
+      section.last
+        div.copy
+          h2 Seguro
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id facilisis enim, augue accumsan. At hendrerit congue tincidunt feugiat. Adipiscing sapien, amet vitae tincidunt nec mus elit et. Proin dignissim quis mattis augue ipsum dolor faucibus. Vitae enim varius commodo id feugiat.
+        div.graphic
+          img(src="./image/ill2.png")
+      section.promo
+        .promo-copy
+          h4 Siente la cercanía de todo lo que más quieres...
+        .promo-banner
+          div.promo-slide
+            div
+              h4
+                | 25
+                small %
+            div 
+              strong de descuento
+              p por apertura!
+              small Promoción válida durante todo Octubre del 2020
+    footer
+      .footer-graph
+        img(src="./image/ill3.png")
+      .footer-credits
+    script(src="index.js")
