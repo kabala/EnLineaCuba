@@ -6,10 +6,26 @@
   section:not(.hero),
   footer {
     margin: 0 auto;
+
+
     @include breakpoint-up(large) {
       max-width: 1200px;
     }
+    
   }
+
+  main section:not(.hero) {
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+
+      img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
 
   header {
     display: flex;
@@ -49,26 +65,60 @@
     .copy {
       padding: 0 3em;
 
+      h2 {
+        color: $tertiary;
+      }
+
+
+
+      @include breakpoint-up(small) {
+        padding: 0;
+
+        &:first-child { 
+          padding: 0;
+        }
+
+        h2 {
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+
+      @include breakpoint-down(small) {
+        h2 {
+          font-size: 30px;
+        }
+      }
+
       @include breakpoint-up(large) {
         width: 40%;
-      }
 
-      &:first-child {
-        text-align: right;
-        width: 50%;
-        padding: 0 3em 0 8em;
+        &:first-child {
+          text-align: right;
+          width: 50%;
+          padding: 0 3em 0 8em;
+        }
+        h2 {
+          font-size: 40px;
+        }
       }
-    }
-
-    h2 {
-      font-size: 40px;
-      color: $tertiary;
     }
 
     p {
       color: $secondary;
-      font-size: 16px;
       line-height: 24px;
+
+      @include breakpoint-up(small) {
+        font-size: 16px;
+      }
+
+      @include breakpoint-up(medium) {
+        font-size: 20px;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -111,6 +161,14 @@
       h4 {
         color: $secondary;
         font-size: 40px;
+
+        @include breakpoint-down(small) {
+         font-size: 28px;
+        }
+
+        @include breakpoint-down(medium) {
+          text-align: center;
+        }
       }
     }
 
@@ -507,12 +565,13 @@
       position: absolute;
       width: calc(100% - 2em);
       top: 50%;
+      z-index: 10;
 
       > ul {
         background-color: white;
         padding: 0.5em !important;
         border-radius: $default-border;
-        box-shadow: 0 0 8px rgba($secondary, 0.2);
+        box-shadow: 0 0 12px rgba($secondary, 0.9);
         color: $secondary;
         z-index: 1;
 
@@ -577,25 +636,6 @@
             background-color: $bg-gray;
           }
         }
-      }
-
-      &:after {
-        content: "";
-        position: fixed;
-        background: radial-gradient(
-          circle,
-          rgba($secondary, 0.9) 0%,
-          rgba($secondary, 0.7) 40%,
-          rgba($secondary, 0) 60%
-        );
-
-        width: 180%;
-        height: 180%;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        z-index: -1;
-        filter: blur(10px);
       }
     }
 
