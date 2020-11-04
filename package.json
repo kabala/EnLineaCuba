@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/index.pug",
-    "build": "parcel build ./src/index.pug --no-minify"
+    "dev": "parcel ./src/*.pug",
+    "build": "parcel build ./src/*.pug -d dist --target browser --no-minify"
   },
   "author": "",
   "license": "ISC",
@@ -15,8 +15,13 @@
     "sass": "^1.26.10"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "breakpoint-sass-mixins": "^1.0.0",
     "cleave.js": "^1.6.0",
-    "normalizecss": "^3.0.0"
+    "cssnano": "^4.1.10",
+    "normalizecss": "^3.0.0",
+    "postcss-modules": "^3.2.2",
+    "sass-flex-grid": "^1.0.7",
+    "tailwindcss": "^1.9.6"
   }
 }

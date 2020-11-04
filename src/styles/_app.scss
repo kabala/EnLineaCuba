@@ -1,0 +1,14 @@
+.app {
+    .container {
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 176px;
+        color: white;
+        background-color: $bg-blue;
+        padding-top: 2em;
+    }
+}
