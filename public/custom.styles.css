@@ -1,0 +1,64 @@
+:root {
+	--blue-nav: #dcf0ff;
+	--blue-background-body: #0b1670;
+	--important-message: #2376b2;
+	--second-button: #b22345;
+	--bg-credit: #dcf0ff;
+}
+
+.navbar-custom {
+	background-color: var(--blue-nav);
+}
+
+.body-background {
+	background-color: var(--blue-background-body);
+}
+.message-important {
+	background-color: var(--important-message);
+}
+
+.button-background {
+	background-color: var(--blue-background-body);
+}
+.second-button {
+	background-color: var(--second-button);
+}
+
+.text-custom-bg {
+	color: var(--blue-background-body);
+}
+
+.active {
+	background-color: var(--important-message);
+}
+.title-custom {
+	color: var(--second-button);
+}
+
+.button-paypal {
+	background: radial-gradient(
+		50% 197.51% at 0% 0%,
+		#338bcb 0%,
+		#338bcb 30.2%,
+		#2376b2 30.21%,
+		#2b82c1 30.22%,
+		#2b82c1 52.07%,
+		#2b82c1 52.08%,
+		#2376b2 52.08%,
+		#2376b2 100%
+	);
+	border-radius: 6px;
+}
+
+.bg-credit-card {
+	background-color: var(--bg-credit);
+}
+.tex-credit {
+	color: var(--important-message);
+}
+
+.credit-card {
+	border: 1px solid #2376b2;
+	box-sizing: border-box;
+	border-radius: 6px;
+}

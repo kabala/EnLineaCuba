@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="custom.styles.css" />
+	</head>
+	<body class="container-fluid body-background">
+		<div class="flex flex-wrap navbar-custom py-5 md:py-0">
+			<div
+				class="flex content-center justify-center flex-wrap h-16 md:h-40 w-full md:w-1/4"
+			>
+				<div class="bg-white text-center rounded-full h-12 w-56">
+					<p class="text-gray-400 mt-3 font-semibold">LOGO</p>
+				</div>
+			</div>
+			<div
+				class="flex flex-col sm:flex-row justify-between md:flex-wrap content-center px-10 h-40 w-full md:w-8/12"
+			>
+				<div class="flex flex-row w-2/4 p-5 pl-0">
+					<img class="h-16" src="img/avatar.png" />
+					<div class="flex flex-col ml-4 mt-3">
+						<p class="text-custom-bg font-semibold text-xs mt-3xs">
+							Bienvenido
+						</p>
+						<p class="text-custom-bg font-bold text-lg">Dairon Medina</p>
+					</div>
+				</div>
+				<button
+					class="rounded-lg h-10 mt-0 mb-16 sm:mb-0 sm:mt-6 w-32 text-xs button-background hover:bg-indigo-800 text-white font-bold py-2 px-4 border border-indigo-800 rounded"
+				>
+					Enviar Recarga
+				</button>
+			</div>
+		</div>
+		<div class="mx-3 md:mx-32 grid grid-cols-1 md:grid-cols-8">
+			<div class="col w-full mx-5 md:mx-0 col-span-2">
+				<div
+					class="flex flex-row w-56 mt-4 mb-4 md:mt-16 mr-16 rounded-lg py-2 pl-2 pr-5"
+				>
+					<img class="border-white h-6" src="img/icon.png" />
+					<p class="ml-3 text-sm font-semibold text-white">Configuración</p>
+				</div>
+				<div class="flex flex-row mt-2 mr-16 active rounded-lg py-2 pl-2 pr-5">
+					<img class="border-white h-6" src="img/icon.png" />
+					<p class="ml-3 text-sm font-semibold text-white">Métodos de pago</p>
+				</div>
+				<div class="flex flex-row mt-2 mr-16 rounded-lg py-2 pl-2 pr-5">
+					<img class="border-white h-6" src="img/icon.png" />
+					<p class="ml-3 text-sm font-semibold text-white">Contacto</p>
+				</div>
+				<div class="flex flex-row mt-2 mr-16 rounded-lg py-2 pl-2 pr-5">
+					<img class="border-white h-6" src="img/icon.png" />
+					<p class="ml-3 text-sm font-semibold text-white">Historial</p>
+				</div>
+				<div class="flex flex-row mt-2 mb-2 mr-16 rounded-lg py-2 pl-2 pr-5">
+					<img class="border-white h-6" src="img/icon.png" />
+					<p class="ml-3 text-sm font-semibold text-white">Comparte!</p>
+				</div>
+			</div>
+			<div
+				class="col w-full bg-white mb-16 mt-0 md:-mt-10 rounded-lg col-span-6"
+			>
+				<div class="flex justify-between p-8">
+					<p class="title-custom font-bold my-5">Métodos de Pago</p>
+					<button
+						class="bg-white w-40 h-10 hover:bg-gray-100 text-gray-800 font-semibold py-0 px-0 border border-gray-400 rounded shadow"
+					>
+						Añadir Tarjeta
+					</button>
+				</div>
+				<hr class="p-1 mt-0 mb-4" />
+				<div class="grid grid-cols-1 sm:grid-cols-2">
+					<div>
+						<div
+							class="message-important w-11/12 w-11/12 mx-4 my-5 py-10 pt-4 pb-4 h-20 rounded-lg button-paypal"
+						>
+							<img class="h-5" src="img/Paypal.png" />
+						</div>
+						<div
+							class="flex credit-card flex-row relative message-important w-11/12 w-11/12 mx-4 my-5 p-4 h-20 rounded-lg bg-credit-card"
+						>
+							<img class="h-5" src="img/crdit.png" />
+							<div class="ml-5">
+								<p class="mb-0 text-white font-semibold tex-credit">
+									American Express
+								</p>
+								<p class="mb-0 text-white tex-credit">termina en 3121</p>
+							</div>
+							<img class="absolute h-5 right-0 pr-5" src="img/star.png" />
+						</div>
+					</div>
+					<div class="border m-3 p-3">
+						<p class="tex-credit font-bold">Paypal</p>
+						<p class="tex-credit text-sm">
+							Hasta que ingreses una tarjeta de crédito válida, Paypal será el
+							método de pago por defecto. Además podrás seleccionarlo en
+							cualquier momento al hacer una recarga.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
