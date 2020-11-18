@@ -1,22 +1,14 @@
 {
-  "name": "recargas",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./src/index.pug",
-    "build": "parcel build ./src/index.pug --no-minify"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "pug": "^3.0.0",
-    "sass": "^1.26.10"
-  },
-  "dependencies": {
-    "breakpoint-sass-mixins": "^1.0.0",
-    "cleave.js": "^1.6.0",
-    "normalizecss": "^3.0.0"
-  }
+	"name": "enlinea",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build-css": "tailwindcss build src/styles.css -o public/styles.css"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"tailwindcss": "^1.9.6"
+	}
 }
