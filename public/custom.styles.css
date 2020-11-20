@@ -4,10 +4,29 @@
 	--important-message: #2376b2;
 	--second-button: #b22345;
 	--bg-credit: #dcf0ff;
+	--text-title: #648ca9;
+	--text-p: #476e8b;
+	--text-title-date: #003358;
+}
+.navbar-custom {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18), 0px 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-.navbar-custom {
-	background-color: var(--blue-nav);
+@media only screen and (min-width: 640px) {
+	.navbar-custom {
+		background-color: var(--blue-nav);
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.configuration-custom {
+		background-color: var(--blue-nav);
+	}
+}
+@media only screen and (max-width: 639px) {
+	.configuration-custom {
+		background-color: var(--blue-background-body);
+	}
 }
 
 .body-background {
@@ -31,8 +50,15 @@
 .active {
 	background-color: var(--important-message);
 }
-.title-custom {
-	color: var(--second-button);
+@media only screen and (min-width: 640px) {
+	.title-custom {
+		color: var(--second-button);
+	}
+}
+@media only screen and (max-width: 639px) {
+	.title-custom {
+		color: white;
+	}
 }
 
 .button-paypal {
@@ -61,4 +87,17 @@
 	border: 1px solid #2376b2;
 	box-sizing: border-box;
 	border-radius: 6px;
+}
+.text-title-table {
+	color: var(--text-title);
+}
+.text-p {
+	color: var(--text-p);
+}
+.text-title-date {
+	color: var(--text-title-date);
+}
+
+.text-email {
+	color: var(--second-button);
 }
