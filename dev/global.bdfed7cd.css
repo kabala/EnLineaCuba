@@ -1,3 +1,7 @@
+body {
+  background: red;
+}
+
 .sidenav {
   display: none;
   margin-left: 1.25rem;
@@ -12,6 +16,10 @@
     margin-left: 0px;
     margin-right: 0px;
   }
+}
+
+.sidenav a {
+  background-color: blue;
 }
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 

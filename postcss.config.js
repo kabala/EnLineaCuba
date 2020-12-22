@@ -3,10 +3,12 @@ const tailwindcss = require('tailwindcss');
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 const atImport = require("postcss-import")
+const nested = require("postcss-nested")
 
 const plugins = [];
-plugins.push(tailwindcss)
 plugins.push(atImport)
+plugins.push(nested)
+plugins.push(tailwindcss)
 plugins.push(tailwindcss('tailwind.config.js'))
 // This is if you want to include your custom config
 
