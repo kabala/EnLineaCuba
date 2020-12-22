@@ -1,19 +1,20 @@
 mixin mobile-nav
-  .w-full(class='md:hidden')
-    #bottom-navigation.block.fixed.inset-x-0.bottom-0.z-10.bg-white.shadow
-      #tabs.flex.justify-between
-        a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
-          img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/perfil.png')
-          span.tab.tab-home.block.text-xs Perfil
-        a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
-          img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/pago.png')
-          span.tab.tab-kategori.block.text-xs Pago
-        a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
-          img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/contactos.png')
-          span.tab.tab-explore.block.text-xs Contactos
-        a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
-          img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/historial.png')
-          span.tab.tab-whishlist.block.text-xs Historial
-        a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
-          img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/comparte.png')
-          span.tab.tab-account.block.text-xs Comparte
+  nav#bottom-navigation.block.fixed.inset-x-0.bottom-0.z-10.bg-white.shadow
+    .w-full(class='md:hidden')
+      #bottom-navigation.block.fixed.inset-x-0.bottom-0.z-10.bg-white.shadow
+        #tabs.flex.justify-between
+          a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
+            img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/perfil.png')
+            span.tab.tab-home.block.text-xs Perfil
+          a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
+            img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/pago.png')
+            span.tab.tab-kategori.block.text-xs Pago
+          a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
+            img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/contactos.png')
+            span.tab.tab-explore.block.text-xs Contactos
+          a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
+            img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/historial.png')
+            span.tab.tab-whishlist.block.text-xs Historial
+          a.w-full.justify-center.inline-block.text-center.pt-2.pb-1(href='#' class='focus:text-teal-500 hover:text-teal-500')
+            img.inline-block.mb-1(width='25' height='25' viewbox='0 0 42 42' src='img/comparte.png')
+            span.tab.tab-account.block.text-xs Comparte

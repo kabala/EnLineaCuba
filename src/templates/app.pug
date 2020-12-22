@@ -24,9 +24,8 @@ html(lang="es")
           button.block.rounded-lg.h-10.mt-0.mb-16.w-32.text-xs.second-button.text-white.font-bold.py-2.px-4.border.border-red-800.rounded(class='sm:hidden sm:mb-0 sm:mt-6 hover:second-button')
             | RECARGAR
     main.mx-3.grid.grid-cols-1.mb-8(class='md:mx-32 md:grid-cols-8')
-      aside
+      aside.sidenav
         +sidenav
       section.col.w-full.bg-white.mb-16.mt-5.rounded-lg.col-span-6(class='sm:-mt-3 md:-mt-10')
         block content
-    nav#bottom-navigation.block.fixed.inset-x-0.bottom-0.z-10.bg-white.shadow
     +mobile-nav

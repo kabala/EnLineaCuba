@@ -1,5 +1,17 @@
-body {
-  background-color: red !important;
+.sidenav {
+  display: none;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 100%;
+  grid-column: span 2 / span 2;
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 

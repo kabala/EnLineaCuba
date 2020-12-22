@@ -7,7 +7,7 @@ const atImport = require("postcss-import")
 const plugins = [];
 plugins.push(tailwindcss)
 plugins.push(atImport)
-// plugins.push(tailwindcss('tailwind.config.js'))
+plugins.push(tailwindcss('tailwind.config.js'))
 // This is if you want to include your custom config
 
 if (!IS_DEVELOPMENT) {
