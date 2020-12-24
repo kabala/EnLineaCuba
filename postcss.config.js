@@ -8,7 +8,6 @@ const nested = require("postcss-nested")
 const plugins = [];
 plugins.push(atImport)
 plugins.push(nested)
-plugins.push(tailwindcss)
 plugins.push(tailwindcss('tailwind.config.js'))
 // This is if you want to include your custom config
 
