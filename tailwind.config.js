@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
     container: {
@@ -19,6 +21,16 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       }
     },
+    colors: {
+      cyan: "#2376B2",
+      blue: "#0B1670",
+      sky: "#DCF0FF",
+      pink: "#B22345",
+      white: colors.white
+    },
+    fontFamily: {
+      sans: ['PT Sans']
+    }
   },
   future: {
     removeDeprecatedGapUtilities: true,

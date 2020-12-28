@@ -1,0 +1,44 @@
+body {
+  @apply bg-blue;
+}
+
+header {
+  @apply bg-sky;
+  height: 176px;
+}
+
+.content {
+  @apply bg-white shadow-xl;
+}
+
+.sidenav {
+  @apply hidden w-full mx-5 col-span-1 md:block md:mx-0;
+
+  ul {
+    @apply mt-8 pr-4;
+  }
+
+  li + li {
+    @apply mt-2;
+  }
+
+  a {
+    @apply flex flex-row rounded-lg py-4 pl-4 transition-colors duration-150 ease-in-out;
+
+    &:hover {
+      @apply bg-cyan bg-opacity-40;
+    }
+
+    &.active {
+      @apply bg-cyan;
+    }
+
+    span {
+      @apply ml-3 text-base font-semibold text-white;
+    }
+
+    img {
+      @apply border-white h-7;
+    }
+  }
+}
