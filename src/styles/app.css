@@ -2,11 +2,6 @@ body {
   @apply bg-blue;
 }
 
-header {
-  @apply bg-sky;
-  height: 176px;
-}
-
 .button-paypal {
 	background: radial-gradient(
 		50% 197.51% at 0% 0%,
@@ -22,14 +17,82 @@ header {
 	border-radius: 6px;
 }
 
+button {
+  @apply transition-colors duration-150 ease-in-out;
+}
+
 .content {
-  @apply bg-white shadow-xl p-4;
+  @apply bg-white shadow-xl p-4 w-full mb-16 rounded-lg col-span-3 sm:-mt-3 md:-mt-11 flex flex-col;
+  min-height: 540px;
 
   &__top {
-    @apply flex justify-between items-center;
+    @apply flex justify-between items-center pl-4 pt-2 pb-6;
 
     h2 {
-      @apply text-xl text-pink font-normal my-5
+      @apply text-xl text-pink font-normal;
+    }
+
+    button {
+      @apply hidden bg-white h-10 text-cyan font-semibold px-6 border border-cyan rounded shadow sm:block hover:bg-sky;
+    }
+  }
+
+  &__body {
+    @apply flex flex-col flex-1 overflow-auto py-4 border-sky border border-l-0 border-r-0;
+  }
+
+  &__actions {
+    @apply pt-4 flex justify-end;
+
+    button {
+      @apply bg-pink px-6 text-white font-bold rounded h-10 shadow hover:bg-opacity-90;
+    }
+  }
+
+  .notification {
+    @apply bg-cyan flex flex-col p-4 rounded-lg text-white mb-4;
+    span {
+      @apply text-sm;
+    }
+
+    button {
+      @apply rounded bg-white bg-opacity-10 h-10 px-8 hover:bg-opacity-20 font-bold;
+    }
+  }
+
+  fieldset {
+    @apply border-sky border rounded-lg p-4;
+  }
+
+  legend {
+    @apply font-bold text-cyan text-lg px-2 bg-white;
+  }
+
+  label {
+    @apply text-cyan;
+  }
+
+  input {
+    @apply border border-gray text-blue w-full text-lg rounded-md mt-1 h-12 px-4 placeholder-textGray;
+
+    &.error {
+      @apply border-pink shadow;
+    }
+  }
+
+  .form-warning {
+    @apply border border-pink bg-pink bg-opacity-5 rounded-md p-4 mt-7 list-disc list-inside;
+
+    li {
+      @apply text-sm text-blue;
+
+      &::marker {
+        @apply text-pink;
+      }
+
+      &+li {
+        @apply pt-2;
+      }
     }
   }
 }
@@ -38,7 +101,7 @@ header {
   @apply hidden w-full mx-5 col-span-1 md:block md:mx-0;
 
   ul {
-    @apply mt-8 pr-4;
+    @apply mt-6 pr-4;
   }
 
   li + li {
@@ -57,7 +120,8 @@ header {
     }
 
     span {
-      @apply ml-3 text-base font-semibold text-white;
+      @apply ml-3 font-semibold text-white;
+      line-height: 1.75rem;
     }
 
     img {

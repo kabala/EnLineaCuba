@@ -16,7 +16,10 @@ html(lang="es")
     main.container.grid.grid-cols-1.mb-8(class='md:grid-cols-4')
       aside.sidenav
         +sidenav
-      section.content.col.w-full.bg-white.mb-16.mt-5.rounded-lg.col-span-3(class='sm:-mt-3 md:-mt-5')
+      section.content
         +contentTop
-        block content
+        .content__body
+          block content
+        .content__actions
+          button Actualizar Perfil
     +mobile-nav

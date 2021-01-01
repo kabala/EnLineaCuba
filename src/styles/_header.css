@@ -1,0 +1,5 @@
+header {
+    @apply bg-sky;
+    height: 176px;
+    padding-bottom: 2.75rem;
+}

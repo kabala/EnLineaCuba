@@ -26,6 +26,8 @@ module.exports = {
       blue: "#0B1670",
       sky: "#DCF0FF",
       pink: "#B22345",
+      gray: "#C2CFD9",
+      textGray: "#648CA9",
       white: colors.white
     },
     fontFamily: {

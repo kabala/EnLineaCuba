@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import "./styles/app.css";
+@import "./styles/_header.css";
