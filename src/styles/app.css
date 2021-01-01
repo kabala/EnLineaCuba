@@ -22,7 +22,7 @@ button {
 }
 
 .content {
-  @apply bg-white shadow-xl p-4 w-full mb-16 rounded-lg col-span-3 sm:-mt-3 md:-mt-11 flex flex-col;
+  @apply bg-white shadow-xl p-4 w-full mb-16 md:rounded-lg col-span-4 lg:col-span-3 sm:-mt-3 md:-mt-11 flex flex-col;
   min-height: 540px;
 
   &__top {
@@ -38,7 +38,7 @@ button {
   }
 
   &__body {
-    @apply flex flex-col flex-1 overflow-auto py-4 border-sky border border-l-0 border-r-0;
+    @apply flex flex-col flex-1 lg:overflow-auto py-4 border-sky border border-l-0 border-r-0;
   }
 
   &__actions {
@@ -98,7 +98,7 @@ button {
 }
 
 .sidenav {
-  @apply hidden w-full mx-5 col-span-1 md:block md:mx-0;
+  @apply hidden w-full mx-5 col-span-1 lg:block md:mx-0;
 
   ul {
     @apply mt-6 pr-4;

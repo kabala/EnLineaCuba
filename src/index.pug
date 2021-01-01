@@ -11,17 +11,17 @@ block content
   fieldset
     legend Datos Personales
     .mt-0.grid.grid-cols-1.gap-6(class='sm:grid-cols-3')
-      .col-span-2.grid.grid-cols-2.gap-6
-        .col-span-1
+      div.col-span-2.grid.grid-cols-2.gap-6.order-1(class="md:order-0")
+        .col-span-2(class="md:col-span-1")
           label Nombre *
           input(placeholder="Ej: Juan")
-        .col-span-1
+        .col-span-2(class="md:col-span-1")
           label Apellido *
           input
-        .col-span-1
+        .col-span-2(class="md:col-span-1")
           label Email *
           input.error(type="email" placeholder="Ej: user@email.com")
-      .col-span-1
+      div(class="col-span-2 md:col-span-1 order-0 md:order-1")
         ul.form-warning
           li Solo puedes ingresar letras
           li El campo email tiene caracteres inválidos
