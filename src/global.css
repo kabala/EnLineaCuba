@@ -2,5 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @variants responsive {
+    .header-height {
+        height: 176px;
+        padding-bottom: 2.75rem;
+    }
+  }
+}
+
+header {
+  @apply md:header-height;
+}
+
 @import "./styles/app.css";
 @import "./styles/_header.css";

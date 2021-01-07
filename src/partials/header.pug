@@ -1,17 +1,17 @@
 mixin header
   header
-    .container.flex.flex-wrap.items-center.navbar-custom.py-5.h-full(class='md:py-0')
+    .container.flex.flex-wrap.items-center.navbar-custom.py-2.h-full(class='md:py-0')
       .flex.content-center.hidden.justify-center.flex-wrap.h-16.w-full(class='md:block md:w-1/4')
         .hidden.bg-white.ml-10.text-center.rounded-full.h-12.w-56
           p.text-gray-400.mt-3.font-semibold LOGO
-      .flex.flex-row.justify-between.items-center.h-12.w-full.pl-8.pr-4(class='md:flex-wrap sm:h-20 md:w-3/4')
-        .user-info.flex.flex-row.items-center(class='w-2/4')
-          img.h-16.mt-0(src='img/avatar.png')
-          .flex.flex-col.pl-4.text-blue
+      .flex.flex-row.justify-between.items-center.h-12.w-full.px-4(class='md:flex-wrap sm:h-20 md:w-3/4 md:pl-8 md:pr-4')
+        .user-info
+          img.mt-0(src='img/avatar.png' class="h-12 md:h-16")
+          .flex-col.pl-4.text-blue.hidden(class="md:flex")
             span.text-custom-bg.mt-3xs
               | Bienvenido
             span.text-custom-bg.font-bold.text-xl Dairon Medina
         button.hidden.rounded-lg.mt-0.mb-16.h-12.text-lg.bg-blue.text-white.font-bold.px-8.rounded.shadow(class='sm:block sm:mb-0 hover:bg-pink')
           | Enviar Recarga
-        button.block.rounded-lg.h-10.mt-0.mb-16.w-32.text-xs.second-button.text-white.font-bold.px-4.border.border-red-800.rounded(class='sm:hidden sm:mb-0 hover:second-button')
+        button.block.rounded-lg.h-9.mt-0.text-sm.bg-pink.text-white.font-bold.px-6.rounded(class='sm:hidden sm:mb-0')
           | RECARGAR

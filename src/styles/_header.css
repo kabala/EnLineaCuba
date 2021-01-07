@@ -1,5 +1,9 @@
 header {
-    @apply bg-sky;
-    height: 176px;
-    padding-bottom: 2.75rem;
+  @apply bg-blue md:bg-sky md:shadow-none shadow;
+}
+
+.user {
+  &-info {
+    @apply flex flex-row items-center md:w-2/4
+  }
 }
