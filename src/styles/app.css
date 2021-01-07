@@ -33,10 +33,10 @@ button {
     }
 
     button {
-      @apply bg-blue flex justify-center items-center md:bg-white h-10 text-cyan font-semibold w-10 md:px-6 md:w-auto md:border border-cyan rounded shadow sm:block md:hover:bg-sky;
+      @apply bg-sky flex justify-center items-center md:bg-white h-10 text-cyan font-semibold w-10 md:px-6 md:w-auto border border-cyan rounded shadow sm:block md:hover:bg-sky;
 
       img {
-        @apply h-4;
+        @apply h-7 text-blue;
       }
     }
   }
