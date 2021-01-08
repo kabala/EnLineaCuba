@@ -1,0 +1,5 @@
+.list {
+  &-row {
+    @apply flex flex-row justify-between items-center border border-sky p-3 rounded-lg my-1 text-textGray;
+  }
+}
