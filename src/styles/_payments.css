@@ -51,7 +51,7 @@
   }
 
   &-info {
-    @apply border-sky border rounded p-4;
+    @apply border-sky border rounded-lg p-4;
 
     h3 {
       @apply text-cyan text-lg font-bold mb-4;
