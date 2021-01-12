@@ -32,10 +32,26 @@ module.exports = {
     },
     fontFamily: {
       sans: ['PT Sans']
-    }
+    },
+    tooltipArrows: theme => ({
+      'blue-arrow': {
+        borderColor: theme('blue'),
+        borderWidth: 1,
+        backgroundColor: theme('blue'),
+        size: 10,
+        offset: 10
+      },
+      'sky-arrow': {
+        borderColor: theme('cyan'),
+        borderWidth: 1,
+        backgroundColor: theme('cyan'),
+        size: 10,
+        offset: 10
+      },
+    }),
   },
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
-  }
+  },
 }

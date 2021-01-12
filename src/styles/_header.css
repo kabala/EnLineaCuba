@@ -1,5 +1,5 @@
 header {
-  @apply bg-blue md:bg-sky md:shadow-none shadow;
+  @apply bg-blue md:bg-sky md:shadow-none shadow sticky top-0 md:static;
 }
 
 .user {

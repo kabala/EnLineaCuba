@@ -1,0 +1,64 @@
+.payment {
+  @apply text-cyan bg-sky flex flex-col justify-between  p-2 h-20 rounded-lg border border-cyan cursor-pointer relative;
+
+  &__method {
+    @apply flex items-center;
+
+    img {
+      @apply mr-2;
+    }
+  }
+
+  &__details {
+    @apply ml-7 text-textGray;
+  }
+
+  &--selected {
+    @apply bg-blue border-blue text-white;
+    img {
+      filter: brightness(10);
+      @apply opacity-90;
+    }
+
+    ^&__details {
+      @apply text-white text-opacity-80;
+    }
+  }
+
+  &--active {
+    &::after {
+      content: "";
+      background: url("../img/star.svg") no-repeat center calc(50% - 1px);
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      @apply bg-white right-2 top-2;
+      position: absolute;
+    }
+  }
+
+  &--selected:hover {
+    @apply bg-opacity-90;
+  }
+
+  &:not(&--selected):hover {
+    @apply bg-opacity-80;
+  }
+
+  & + & {
+    @apply mt-2;
+  }
+
+  &-info {
+    @apply border-sky border rounded p-4;
+
+    h3 {
+      @apply text-cyan text-lg font-bold mb-4;
+    }
+
+    p {
+      @apply text-textGray;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+extends templates/app.pug
+block content
+  .grid.grid-cols-1(class="md:grid-cols-3")
+    div.col-span-1
+      .payment.payment--selected
+        .payment__method
+          img.h-5(src="img/paypal.svg")
+          strong Paypal
+        .payment__details
+      .payment.payment--active
+        .payment__method
+          img.h-5(src="img/credit-icon.svg")
+          strong American Express
+        .payment__details
+          span termina en 
+          strong -3121
+    .col-span-2(class="md:ml-4 md:block hidden")
+      .payment-info
+        h3 Paypal
+        p
+          | Hasta que ingreses una tarjeta de crédito válida, Paypal será el
+          | método de pago por defecto. Además podrás seleccionarlo en
+          | cualquier momento al hacer una recarga.
