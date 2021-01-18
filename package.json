@@ -11,6 +11,9 @@
 	"license": "ISC",
 	"dependencies": {
 		"@tailwindcss/postcss7-compat": "^2.0.2",
+		"breakpoint-sass-mixins": "^1.0.0",
+		"cleave.js": "^1.6.0",
+		"normalizecss": "^3.0.0",
 		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
 	},
 	"devDependencies": {
@@ -24,6 +27,7 @@
 		"postcss-modules": "^4.0.0",
 		"postcss-nested": "4.2.3",
 		"postcss-nested-ancestors": "^2.0.0",
-		"pug": "^3.0.0"
+		"pug": "^3.0.0",
+		"sass": "^1.26.10"
 	}
 }
